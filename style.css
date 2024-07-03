@@ -1,3 +1,34 @@
 :root {
-    
+    --heading-color: hsl(16, 68%, 31%);
+    --table-amount-color: hsl(16, 68%, 31%);
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 25px;
+    font-family: outfit;
+    color: gray;
+}
+
+h2 {
+    color: hsl(26, 6%, 22%)
+}
+
+h2, h3 {
+    font-family: "young serif";
+}
+
+.introduction img {
+    height: 75%;
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
