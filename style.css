@@ -1,15 +1,14 @@
 :root {
-    ### Primary
 
-    - Nutmeg: hsl(14, 45%, 36%)
-    - Dark Raspberry: hsl(332, 51%, 32%)
-
-    - White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
+    --header-color: hsl(14, 45%, 36%);
+    --preparation-color: hsl(332, 51%, 32%);
+    
+    --White: hsl(0, 0%, 100%);
+    --preparation-background-color: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --body-text-color: hsl(30, 10%, 34%);
+    --top-header-color: hsl(24, 5%, 18%);
 }
 
 body {
@@ -17,15 +16,50 @@ body {
     padding: 0;
     margin: 25px;
     font-family: outfit;
-    color: gray;
+    font-size: 16px;
+    color: var(--body-text-color);
 }
 
 h2 {
-    color: hsl(26, 6%, 22%)
+    color: var(--top-header-color);
+    font-size: 2.5rem;
 }
 
 h2, h3 {
     font-family: "young serif";
+}
+
+h3 {
+    color: var(--header-color);
+}
+
+h4 {
+    color: var(--preparation-color)
+}
+
+.preparationContainer {
+    background-color: var(--preparation-background-color);
+}
+
+.preparationBulletColor {
+    color: var(--preparation-color);
+}
+
+.preparationList {
+    color: var(--body-text-color);
+}
+
+.listColorOrange {
+    color: var(--header-color)
+}
+
+.listColorGray {
+    color: var(--body-text-color);
+}
+
+.listColorOrangeBold {
+    color: var(--header-color);
+    font-weight: 600;
 }
 
 .introduction img {
