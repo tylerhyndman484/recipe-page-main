@@ -9,15 +9,25 @@
     --Light-Grey: hsl(30, 18%, 87%);
     --body-text-color: hsl(30, 10%, 34%);
     --top-header-color: hsl(24, 5%, 18%);
+    --background-color: hsla(13, 96%, 55%, 0.056);
 }
 
 body {
     box-sizing: border-box;
     padding: 0;
-    margin: 25px;
+    margin: 200px;
     font-family: outfit;
     font-size: 16px;
     color: var(--body-text-color);
+    background-color: var(--background-color)
+  
+}
+
+.bodyContainer {
+    max-height: 75%;
+    max-width: 50%;
+    margin: auto;
+    background-color: var(--White);
 }
 
 h2 {
