@@ -118,7 +118,7 @@ h4 {
 
 .instructions h3 {
     font-size: 1.75rem;
-    border-top: solid 1px var(--body-text-color);
+    border-top: solid 1px rgb(229, 228, 228);
     padding-top: 30px;
 }
 
