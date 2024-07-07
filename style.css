@@ -86,8 +86,25 @@ h4 {
     color: var(--preparation-color);
 }
 
+.preparationContainer ul {
+    padding-left: 25px;
+}
+
 .preparationList {
     color: var(--body-text-color);
+    padding-left: 18px;
+}
+
+.ingredients h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0px;
+}
+
+
+.ingredients ul {
+    line-height: 1.85rem;
+    margin-top: 0px;
+    padding-top: 15px;
 }
 
 .listColorOrange {
@@ -97,6 +114,16 @@ h4 {
 .listColorGray {
     color: var(--body-text-color);
     font-size: 1rem;
+}
+
+.instructions h3 {
+    font-size: 1.75rem;
+    border-top: solid 1px var(--body-text-color);
+    padding-top: 30px;
+}
+
+.nutrition h3 {
+    font-size: 1.75rem;
 }
 
 .listColorOrangeBold {
