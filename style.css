@@ -10,7 +10,7 @@
     --body-text-color: hsl(30, 10%, 34%);
     --top-header-color: hsl(24, 5%, 18%);
     --background-color: hsla(13, 96%, 55%, 0.056);
-    --border-color: rgb(229, 228, 228); */
+    --border-color: rgb(229, 228, 228);
 } 
 
 * {
@@ -28,7 +28,7 @@ body {
 
 .bodyContainer {
     max-width: 60%;
-    margin: 107px auto 143px auto;
+    margin: 107px auto 107px auto;
     background-color: var(--White);
     border-radius: 20px;
     padding: 40px
@@ -38,21 +38,24 @@ body {
     border-radius: 20px;
 }
 
-.introduction {
-    line-height: 1.75rem;
-}
-
 .introduction h2 {
     color: var(--top-header-color);
-    font-size: 2.5rem;
-    margin-top: 2.8rem;
+    font-size: 3.25rem;
+    margin-top: 1.3rem;
+}
+
+.introduction p {
+    line-height: 1.75rem;
+    padding-top: 20px;
+    font-size: 1.2rem;
 }
 
 .preparationContainer {
-    padding-left: 40px;
-    padding-top: 1px;
-    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 10px;
 }
 
@@ -73,6 +76,7 @@ body {
 
 h2, h3 {
     font-family: "young serif";
+    font-weight: 100;
 }
 
 h3 {
@@ -80,7 +84,8 @@ h3 {
 }
 
 h4 {
-    color: var(--preparation-color)
+    color: var(--preparation-color);
+    font-weight: 600;
 }
 
 .preparationContainer {
@@ -109,7 +114,7 @@ h4 {
 .ingredients ul {
     line-height: 2.5rem;
     margin-top: 0px;
-    margin-bottom: 27px;
+    margin-bottom: 1.75rem;
     padding-top: 15px;
     padding-left: 20px;
 }
@@ -127,7 +132,7 @@ h4 {
 
 .instructions ol {
     padding-left: 25px;
-    padding-bottom: .25rem  
+    padding-bottom: 2rem;  
 }
 
 
@@ -158,6 +163,11 @@ h4 {
     font-size: 1.75rem;
     border-top: 1px solid var(--border-color);
     padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nutrition p {
+    padding-bottom: 1rem;
 }
 
 .nutrition .macro {
@@ -183,8 +193,12 @@ td {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+    padding-top: 20px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-} */
+} 
