@@ -30,21 +30,41 @@ body {
     max-width: min(750px, 100%);
     margin: 107px auto 107px auto;  
     background-color: var(--White);
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 1.25rem;
+}
+
+.paddingContainer {
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.headingPic {
+    max-width: min(750px, 100%);
+    background-color: var(--White);
+    padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+.headingPic img {
+    width: 100%;
+    border-radius: 1.25rem;
 }
 
 @media only screen and (max-width: 750px) {
     .bodyContainer {
         margin: 0;
+        border-radius: 0;
     }
 }
 
-.introduction img {
-    height: 75%;
-    width: 100%;
-    border-radius: 20px;
+@media only screen and (max-width: 750px) {
+     .headingPic, .headingPic img {
+        border-radius: 0;
+        padding: 0;
+     }
 }
+
 
 .introduction h2 {
     color: var(--top-header-color);
