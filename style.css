@@ -27,14 +27,22 @@ body {
 }
 
 .bodyContainer {
-    max-width: 60%;
-    margin: 107px auto 107px auto;
+    max-width: min(750px, 100%);
+    margin: 107px auto 107px auto;  
     background-color: var(--White);
     border-radius: 20px;
-    padding: 40px
+    padding: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+    .bodyContainer {
+        margin: 0;
+    }
 }
 
 .introduction img {
+    height: 75%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -185,10 +193,6 @@ td {
     border-bottom: 1px solid var(--border-color);
 }
 
-.introduction img {
-    height: 75%;
-    width: 100%;
-}
 
 .attribution { 
     font-size: 11px; 
