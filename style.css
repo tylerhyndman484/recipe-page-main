@@ -68,8 +68,16 @@ body {
 
 .introduction h2 {
     color: var(--top-header-color);
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     margin-top: 1.3rem;
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 750px) {
+    .introduction h2 {
+        font-size: 2rem;
+    }
+
 }
 
 .introduction p {
@@ -88,7 +96,7 @@ body {
 }
 
 .preparationContainer ul {
-    line-height: 2.5rem;   
+    line-height: 1.5rem;   
     margin-top: 10px;
 }
 
@@ -125,12 +133,15 @@ h4 {
 }
 
 .preparationContainer ul {
-    padding-left: 25px;
+    margin-left: 1.25em;
 }
 
 .preparationList {
     color: var(--body-text-color);
-    padding-left: 18px;
+    position: relative;
+    left: 30px;
+    width: 75%;
+    height: 75%;
 }
 
 .ingredients h3 {
