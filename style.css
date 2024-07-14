@@ -83,7 +83,6 @@ body {
 .introduction p {
     line-height: 1.75rem;
     padding-top: 20px;
-    font-size: 1.2rem;
 }
 
 .preparationContainer {
@@ -133,15 +132,28 @@ h4 {
 }
 
 .preparationContainer ul {
-    margin-left: 1.25em;
+    margin-left: 2.5em;
+    list-style: none;
 }
 
 .preparationList {
     color: var(--body-text-color);
     position: relative;
-    left: 30px;
-    width: 75%;
-    height: 75%;
+}
+
+
+.preparationList::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--preparation-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    vertical-align: middle;
+    position: absolute;
+    left: -32px;
+    top: 8px;
 }
 
 .ingredients h3 {
