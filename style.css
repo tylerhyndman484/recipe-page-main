@@ -105,8 +105,9 @@ body {
 }
 
 .ingredients .listColorOrange {
-    list-style: square;
+    list-style: none;
     font-size: .70rem;
+
 }
 
 h2, h3 {
@@ -142,8 +143,7 @@ h4 {
     position: relative;
 }
 
-
-.preparationList::before {
+.firstBullet::before {
     content: '';
     display: inline-block;
     background-color: var(--preparation-color);
@@ -151,10 +151,42 @@ h4 {
     height: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    vertical-align: middle;
     position: absolute;
     left: -32px;
     top: 8px;
+}
+
+@media only screen and (max-width: 377px) {
+    .firstBullet::before {
+        top: 20px;
+    }
+}
+
+
+.secondBullet::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--preparation-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 8px;
+}
+
+.thirdBullet::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--preparation-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 8px;  
 }
 
 .ingredients h3 {
@@ -164,7 +196,7 @@ h4 {
 
 
 .ingredients ul {
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     margin-top: 0px;
     margin-bottom: 1.75rem;
     padding-top: 15px;
@@ -173,6 +205,8 @@ h4 {
 
 .ingredients li {
     padding-left: 20px;
+    padding-top: 5px;
+    position: relative;
 }
 
 .instructions h3 {
@@ -184,15 +218,49 @@ h4 {
 
 .instructions ol {
     padding-left: 25px;
-    padding-bottom: 2rem;  
+    padding-bottom: 2rem; 
 }
 
 
 .instructions li {
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-top: 10px;
     padding-left: 18px;
 }
+
+.bulletGroup1::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--preparation-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 15px; 
+    
+}
+
+.bulletGroup2::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--preparation-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 15px; 
+}
+
+@media only screen and (max-width: 567px) {
+    .bulletGroup2::before {
+        top: 30px;
+    }
+}
+
 
 
 .listColorOrange {
@@ -215,11 +283,12 @@ h4 {
     font-size: 1.75rem;
     border-top: 1px solid var(--border-color);
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .nutrition p {
     padding-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .nutrition .macro {
@@ -231,6 +300,8 @@ h4 {
 .listColorOrangeBold {
     color: var(--header-color);
     font-weight: 600;
+    width: 50%;
+    padding-left: 28px;
 }
 
 td {
