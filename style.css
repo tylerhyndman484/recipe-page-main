@@ -81,7 +81,7 @@ body {
 }
 
 .introduction p {
-    line-height: 1.75rem;
+    line-height: 1.5rem;
     padding-top: 20px;
 }
 
@@ -129,6 +129,7 @@ h4 {
 
 .preparationBulletColor {
     color: var(--preparation-color);
+    margin-top: 10px;
 }
 
 .preparationContainer ul {
