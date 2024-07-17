@@ -30,8 +30,8 @@ body {
     max-width: min(750px, 100%);
     margin: 107px auto 107px auto;  
     background-color: var(--White);
-    border-radius: 1.25rem;
 }
+
 
 .paddingContainer {
     padding-top: 0;
@@ -44,6 +44,7 @@ body {
     max-width: min(750px, 100%);
     background-color: var(--White);
     padding: 2.5rem 2.5rem 0 2.5rem;
+    border-radius: 1.25rem;
 }
 
 .headingPic img {
