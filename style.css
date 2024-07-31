@@ -30,6 +30,7 @@ body {
     max-width: min(750px, 100%);
     margin: 107px auto 107px auto;  
     background-color: var(--White);
+    border-radius: 20px;
 }
 
 
@@ -312,11 +313,12 @@ td {
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-    display: flex; 
+    text-align: center;
+    position: relative;
+    display: flex;
     justify-content: center;
-    gap: 20px; 
-    padding-top: 20px;
+    bottom: 20px;
+    gap: 20px;
 }
 
 .attribution a { 
